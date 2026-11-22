@@ -1,6 +1,6 @@
 {
   "name": "invoicespec-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Zero-dependency EN 16931, Peppol BIS Billing 3.0, ZUGFeRD 2.3, XRechnung 3.0 & Factur-X XML Schematron validator and ERP JSON-to-UBL/CII converter.",
   "type": "module",
   "main": "./index.mjs",
@@ -28,9 +28,9 @@
     "schematron",
     "validator"
   ],
-  "author": "InvoiceSpec Hub <https://invoicespec-hub.pages.dev>",
+  "author": "InvoiceSpec Hub <https://invoicespec.dev>",
   "license": "MIT",
-  "homepage": "https://invoicespec-hub.pages.dev",
+  "homepage": "https://invoicespec.dev",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diesel424/invoicespec-cli.git"

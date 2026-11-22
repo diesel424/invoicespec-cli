@@ -1,4 +1,4 @@
-const SITE_BASE = 'https://invoicespec-hub.pages.dev';
+const SITE_BASE = 'https://invoicespec.dev';
 
 const VALID_ISO_4217 = new Set([
   'EUR', 'USD', 'GBP', 'PLN', 'SEK', 'NOK', 'DKK', 'CHF', 'CZK', 'HUF', 'RON', 'BGN', 'AUD', 'CAD', 'JPY',

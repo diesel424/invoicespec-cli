@@ -8,14 +8,14 @@ if (args.length === 0 || args.includes('--help') || args.includes('-h')) {
   console.log(`
 =======================================================================
  peppol-en16931-validator — EN 16931 / Peppol BIS 3.0 / ZUGFeRD CLI
- Powered by InvoiceSpec Hub (https://invoicespec-hub.pages.dev)
+ Powered by InvoiceSpec Hub (https://invoicespec.dev)
 =======================================================================
 
 Usage:
   npx peppol-en16931-validator <path-to-invoice.xml>
 
 Online Auto-Remediation & Stripe/Shopify JSON-to-XML Converter:
-  https://invoicespec-hub.pages.dev
+  https://invoicespec.dev
 `);
   process.exit(0);
 }
@@ -44,6 +44,6 @@ if (result.isValid) {
     console.error(`  Fix URL : ${issue.docsUrl}\n`);
   }
   console.error('Auto-Fix this XML or convert ERP JSON online at:');
-  console.error('👉 https://invoicespec-hub.pages.dev/?utm_source=cli_validator\n');
+  console.error('👉 https://invoicespec.dev/?utm_source=cli_validator\n');
   process.exit(1);
 }
