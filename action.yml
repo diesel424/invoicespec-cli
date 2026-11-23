@@ -1,0 +1,23 @@
+name: 'InvoiceSpec — EU E-Invoice Validator (Peppol, XRechnung, ZUGFeRD, KSeF)'
+description: 'Pre-flight EN 16931 Schematron validator for Peppol BIS 3.0, XRechnung 3.0, ZUGFeRD 2.3, Factur-X & KSeF XML in CI/CD.'
+author: 'InvoiceSpec Hub (https://invoicespec.dev)'
+
+branding:
+  icon: 'file-text'
+  color: 'blue'
+
+inputs:
+  file:
+    description: 'Path to the UBL 2.1, CII, XRechnung, ZUGFeRD, or KSeF XML invoice file to validate'
+    required: true
+  standard:
+    description: 'Optional standard slug (peppol-bis-3, xrechnung-3-0, zugferd-2-3, factur-x-1-07, ksef-fa2)'
+    required: false
+    default: 'peppol-bis-3'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Run InvoiceSpec EN 16931 Validator
+      shell: bash
+      run: npx --yes invoicespec-cli@latest "${{ inputs.file }}"
